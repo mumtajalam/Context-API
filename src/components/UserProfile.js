@@ -1,9 +1,14 @@
-import { useContext } from 'react'
-import React from 'react'
-import { UserContext } from "./App"
+import { useContext } from "react";
+import React from "react";
+import { UserContext } from "./App";
 
-const UserProfile = () =>{
-
-}
-
-export {UserProfile}
+const UserProfile = () => {
+  const localval = useContext(UserContext);
+  return (
+    <>
+      <h1 id="name">Name:- {localval.name}</h1>
+      <h1 id="name">Age:- {localval.age}</h1>
+    </>
+  );
+};
+export { UserProfile };
