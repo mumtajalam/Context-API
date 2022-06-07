@@ -7,7 +7,7 @@ const UserProfile = () => {
   return (
     <>
       <h1 id="name">Name:- {localval.name}</h1>
-      <h1 id="name">Age:- {localval.age}</h1>
+      <h1 id="age">Age:- {localval.age}</h1>
     </>
   );
 };
